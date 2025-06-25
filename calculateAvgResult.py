@@ -89,8 +89,8 @@ def aggregate_timings_dicts(dicts: list) -> dict:
     return agg
 
 # --------------------------------------------------------------------------------
-# 3) Utility: In einem Elternordner („base_dir“) alle validen Kinder‐Unterordner auflisten
-#    Diese Funktion filtert nach predefinierten Listen (OBJECTS, VISIBILITIES, … usw.)
+# 3) Utility: List all valid child folders in a parent directory ("base_dir")
+#    This function filters based on predefined lists (OBJECTS, VISIBILITIES, … etc.)
 # --------------------------------------------------------------------------------
 def valid_children(base_dir: Path, depth: int):
     """

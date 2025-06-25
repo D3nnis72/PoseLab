@@ -75,9 +75,7 @@ def build_gt_transform(entry):
     return M
 
 def build_estimated_transform(R_str, t_str):
-    # R_str is like "-0.0769 -0.9892 ... 0.8506 0.0 -0.5257"
     R = np.array(list(map(float, R_str.split())), np.float32).reshape(3,3)
-    # t_str is like "24.97 27.52 642.35"
     t = np.array(list(map(float, t_str.split())), np.float32) / 1000.0
     M = np.eye(4, dtype=np.float32)
     M[:3,:3], M[:3,3] = R, t
@@ -152,7 +150,6 @@ def main():
                    help="Folder with MegaPose/scene_gt.json, image_rgb.png, etc.")
     p.add_argument("--model-id", type=int, default=1,
                    help="Only render this obj_id.")
-    
     p.add_argument("--out-dir", default="mesh_visualizations")
     p.add_argument(
         "--model-scale", type=float, default=0.001,
@@ -190,19 +187,16 @@ def main():
     R = R_mat.reshape(-1).tolist()         
     t    = (t_vec * 1000.0).tolist()  
     
-    
-
-    # 5) constants
     scene_id = j.get("scene_id", 0)
     im_id    = j.get("view_id", 0)
     obj_id   = j.get("obj_id", 1)
     score    = 0
     time_    = 0
 
-    # 6) ensure output dir
+    # 4) ensure output dir
     os.makedirs(os.path.dirname(csv_result_path), exist_ok=True)
 
-    # 7) write CSV
+    # 5) write CSV
     with open(csv_result_path, "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["scene_id","im_id","obj_id","score","R","t","time"])
@@ -211,8 +205,6 @@ def main():
         t_str = " ".join(f"{v:.6f}" for v in t)
 
         writer.writerow([scene_id, im_id, obj_id, score, R_str, t_str, time_])
-    # check if file exists
-
 
     # process each image / entry
     for im_str, entries in gt.items():
