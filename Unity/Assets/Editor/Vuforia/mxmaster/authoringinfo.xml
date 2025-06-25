@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<QCARInfo>
+    <TargetSet version="36.0" toolVersion="v7.3.1">
+        <ModelTarget name="mxmaster" targetId="061cb77f701346cdaac89758580e3c65" version="14.0" toolVersion="v7.3.1" bbox="-0.0576057 -0.0205166 -0.037565 0.0636317 0.0232686 0.0430232" trackingMode="scan" upVector="0.0 1.0 0.0" optimizeTrackingFor="default" realisticTextures="yes" />
+    </TargetSet>
+    <Assembly name="mxmaster" assemblyId="f339f1afcf5a4333aab6bd1736725426">
+        <Part name="mxmaster" translation="0 0 0" rotation="AD: 0 0 1 0" />
+        <EntryPoint name="(none)" trained="yes" />
+    </Assembly>
+</QCARInfo>

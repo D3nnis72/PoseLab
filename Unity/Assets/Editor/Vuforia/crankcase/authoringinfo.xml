@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<QCARInfo>
+    <TargetSet version="36.0" toolVersion="v7.3.1">
+        <ModelTarget name="crankcase" targetId="e83a040ce7bf483e9bfedb699856d7fb" version="14.0" toolVersion="v7.3.1" bbox="-0.203033 -0.166633 -0.183344 0.221381 0.164572 0.230092" trackingMode="car" upVector="0.0 1.0 0.0" optimizeTrackingFor="default" realisticTextures="no" />
+    </TargetSet>
+    <Assembly name="crankcase" assemblyId="6fbdbb0b5e4541dcbd76f1b9fa6085d9">
+        <Part name="crankcase" translation="0 0 0" rotation="AD: 0 0 1 0" />
+        <EntryPoint name="(none)" trained="yes" />
+    </Assembly>
+</QCARInfo>
