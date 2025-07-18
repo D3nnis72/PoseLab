@@ -3,7 +3,7 @@
 Prototype implementation for the bachelor thesis of **Dennis Zink** at **Hochschule der Medien** in collaboration with **Mercedes-Benz**.  
 Topic: **“Generalizable 6DoF Pose Estimation in Augmented Reality: A Comparison of Modern Methods.”**
 
-> 📄 Link to the full thesis and paper will be added soon.
+> 📄 [Link to the full thesis and paper](Thesis/BachelorThesis_dz032.pdf)
 
 ---
 
